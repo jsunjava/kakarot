@@ -1,3 +1,4 @@
+Start
 name: CI
 
 on:
@@ -210,3 +211,4 @@ jobs:
         run: |
           result=$(GITHUB_TOKEN=${{ secrets.GITHUB_TOKEN }} make check-resources 2>&1)
           echo "$result" >> "$GITHUB_STEP_SUMMARY"
+          Finish
